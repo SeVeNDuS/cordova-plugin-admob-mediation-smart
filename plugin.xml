@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-admob-mediation-smart" version="0.0.1">
+
+	<name>AdMob Mediation Adapter for Smart</name>
+	<description>AdMob Mediation Adapter for Smart</description>
+	<author>Nathan Kerr</author>
+	<keywords>smart,mediation,admob</keywords>
+	<license>MIT</license>
+
+	<dependency id="@admob-plus/cordova" version=">=0.0.0" />
+
+	<platform name="android">
+		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventBanner.java" />
+		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventBase.java" />
+		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventInterstitial.java" />
+		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventNative.java" />
+		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMAMediationRewardedVideoAdAdapter.java" />
+		
+		<framework src="src/android/adapter.gradle" custom="true" type="gradleReference" />
+	</platform>
+
+	<platform name="ios">
+		<header-file src="src/ios/SASGMACustomEventBanner.h" />
+		<header-file src="src/ios/SASGMACustomEventConstants.h" />
+		<header-file src="src/ios/SASGMACustomEventInterstitial.h" />
+		<header-file src="src/ios/SASGMACustomEventNative.h" />
+		<header-file src="src/ios/SASGMARewardedAdapter.h" />
+		<header-file src="src/ios/SASGMAUtils.h" />
+		<header-file src="src/ios/SASGMACustomEventConstants.h" />
+
+		<source-file src="src/ios/SASGMACustomEventBanner.m" />
+		<source-file src="src/ios/SASGMACustomEventConstants.m" />
+		<source-file src="src/ios/SASGMACustomEventInterstitial.m" />
+		<source-file src="src/ios/SASGMACustomEventNative.m" />
+		<source-file src="src/ios/SASGMARewardedAdapter.m" />
+		<source-file src="src/ios/SASGMAUtils.m" />
+
+		<config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+			<dict>
+				<key>NSAllowsArbitraryLoads</key>
+				<true/>
+				<key>NSAllowsArbitraryLoadsForMedia</key>
+				<true/>
+				<key>NSAllowsArbitraryLoadsInWebContent</key>
+				<true/>
+			</dict>
+		</config-file>
+		<podspec>
+			<config>
+				<source url="https://cdn.cocoapods.org/"/>
+			</config>
+			<pods>
+				<pod name="Smart-Display-SDK" spec="7.8.0" />
+			</pods>
+		</podspec>
+	</platform>
+</plugin>
