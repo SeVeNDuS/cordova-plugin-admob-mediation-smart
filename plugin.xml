@@ -9,8 +9,6 @@
 	<keywords>smart,mediation,admob</keywords>
 	<license>MIT</license>
 
-	<dependency id="@admob-plus/cordova" version=">=0.0.0" />
-
 	<platform name="android">
 		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventBanner.java" />
 		<source-file src="src/android/com/smartadserver/android/library/medition/SASGMACustomEventBase.java" />
