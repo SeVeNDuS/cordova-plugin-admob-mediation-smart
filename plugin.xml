@@ -23,13 +23,12 @@
 		<header-file src="src/ios/SASGMACustomEventBanner.h" />
 		<header-file src="src/ios/SASGMACustomEventConstants.h" />
 		<header-file src="src/ios/SASGMACustomEventInterstitial.h" />
-		<header-file src="src/ios/SASGMACustomEventNative.h" />
+		
 		<header-file src="src/ios/SASGMARewardedAdapter.h" />
 		<header-file src="src/ios/SASGMAUtils.h" />
 
 		<source-file src="src/ios/SASGMACustomEventBanner.m" />
 		<source-file src="src/ios/SASGMACustomEventInterstitial.m" />
-		<source-file src="src/ios/SASGMACustomEventNative.m" />
 		<source-file src="src/ios/SASGMARewardedAdapter.m" />
 		<source-file src="src/ios/SASGMAUtils.m" />
 
