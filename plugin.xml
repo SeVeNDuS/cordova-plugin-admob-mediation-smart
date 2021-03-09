@@ -29,7 +29,6 @@
 		<header-file src="src/ios/SASGMACustomEventConstants.h" />
 
 		<source-file src="src/ios/SASGMACustomEventBanner.m" />
-		<source-file src="src/ios/SASGMACustomEventConstants.m" />
 		<source-file src="src/ios/SASGMACustomEventInterstitial.m" />
 		<source-file src="src/ios/SASGMACustomEventNative.m" />
 		<source-file src="src/ios/SASGMARewardedAdapter.m" />
