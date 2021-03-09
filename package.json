@@ -1,0 +1,36 @@
+{
+	"name": "cordova-plugin-admob-mediation-smart",
+	"version": "0.0.1",
+	"description": "AdMob Mediation Adapter for Smart",
+	"cordova": {
+		"id": "cordova-plugin-admob-mediation-smart",
+		"platforms": [
+			"android",
+			"ios"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [
+		"ecosystem:cordova",
+		"cordova-android",
+		"cordova-ios",
+		"cordova",
+		"plugin",
+		"ad",
+		"smart",
+		"admob",
+		"mediation"
+	],
+	"author": {
+		"name": "SeVeNDuS",
+		"url": "https://github.com/SeVeNDuS"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SeVeNDuS"
+	},
+	"homepage": "https://github.com/SeVeNDuS"
+}
